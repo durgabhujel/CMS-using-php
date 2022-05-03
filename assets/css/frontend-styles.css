@@ -1,0 +1,363 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.top-header {
+    background-color: antiquewhite;
+    color: red;
+    padding: 20px;
+
+}
+.top-header .primary-navigation > ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+    gap: 15px;
+}
+.menu-item {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+    list-style: none;
+}
+.menu-item:hover .sub-menu {
+    display: block;
+}
+.submenu-item:hover {
+    background-color:red;
+    
+}
+a {
+    text-decoration: none;
+}
+form {
+    width: max(50%, 300px);
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: transparent;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+}
+.input-group {
+    margin: 5px 0px 5px 0px;
+}
+
+.input-group label {
+    display: inline-block;
+    text-align: left;
+    margin: 3px;
+    font-weight:bold;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.input-group input[type="text"] {
+    height: 30px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.input-group textarea {
+    width: 100%;
+}
+.input-group select {
+    width: 100%;
+}
+.input-group input[type="text"].captcha {
+    width: 50%;
+}
+.main-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-title {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #fff;
+
+}
+.footer-container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+
+}
+.footer-social-link {
+    margin-right: 30px;
+    margin-top:0px;
+    justify-content: flex-end;
+    gap: 30px;
+    color: #fff;
+}
+.footer-social-link h2 {
+    color:#fff;
+}
+.footer-img {
+    height: 40px;
+    width: 50px;
+    margin: 5px;
+    background-color: transparent;
+    border-radius: 20px;
+     
+}
+h1.section-title {
+    text-align: center;
+    background-color:#B0C4DE;
+    color: black;
+    padding: 30px;
+    
+}
+.news-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 50px;
+}
+.news-card {
+    width: 400px;
+    /* padding-top: 20px; */
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+.news-heading {
+    display:flex;
+    justify-content: space-between;
+}
+.allnews-link {
+    text-align: center;
+    text-decoration: underline;
+    width: 10%;
+    height: 20%;
+    font-weight: 20px;
+    margin: 0 auto;
+    background-color: #deb0b0;
+
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+li.news-item {
+    margin-top: 30px;
+    background-color: #B0C4DE;
+    list-style-type: none;
+    padding: 4px;
+    /* color:#fff; */
+}
+li.news-item a {
+    color: #fff;
+}
+li.news-item.active {
+    background-color: blue;
+    pointer-events: none;
+}
+
+.news-image {
+    gap: 10px;
+    border: 2px solid;
+    width: 30%;
+    height: auto;
+}
+.news-image-single {
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+}
+h2 {
+    margin-top: 0px;
+    padding: 0%;
+    /* text-align: center; */
+    font-weight: bold;
+    color:black;
+}
+.subscribe-section {
+    text-align: center;
+}
+.form-news {
+    background-color: grey;
+    height: 25vh;
+    width: 20%;
+}
+.field {
+    height: 30px;
+    width: 100%;
+
+}
+.field input {
+    width: 100%;
+    padding: 7px 7px 7px 7px;
+    border: 1px solid;
+    border-radius: 15px; 
+
+}
+form .field-btn {
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+
+}
+form .field-btn input {
+    width: 55%;
+    left:15px;
+    margin-left: 50px;
+    margin-right: 40px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    background-color:aquamarine;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.show-subscribe-form{
+    text-align:center;
+    margin: 0 auto;
+    background-color: aquamarine;
+    /* height: auto; */
+    padding: 10px 10px 10px 10px;
+}
+.form-news{
+    position: relative;
+}
+.close-form {
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    color: red;
+}
+section:nth-of-type(2n+1) {
+    background-color: #B0C4DE;
+}
+    
+.error {
+    margin: 0 auto;
+    background-color: red;
+    width: fit-content;
+    color: black;
+}
+section {
+    padding-bottom: 40px;
+
+}
+.quick-link{
+    color: aliceblue;
+    text-decoration: underline;
+    font-style: italic;
+}
+.footer-menu-item {
+    list-style-type: none;
+    color: #fff;
+    padding: 16px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 16px;
+    border: none;
+    /* position: relative; */
+
+}
+.footer-menu {
+    color: #fff;
+}
+.footer-sub-menu{
+    color:black;
+    padding-left: 15px;
+    /* display: none; */
+    /* position: absolute; */
+    /* background-color: rgb(218, 215, 250); */
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* z-index: 1; */
+    text-decoration: none;
+    list-style: none;
+}
+.footer-sub-menu a{
+    color:#fff;
+    font-weight: bold;
+    font-style: italic;
+
+}
+/* .footer-menu-item:hover .footer-sub-menu {
+    display: block;
+} */
+.footer-submenu-item:hover {
+    background-color:red;
+    
+}
+.submenu-item-item1 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    /* font-style: italic; */
+
+
+}
+.download-icon {
+    font-size: 80px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    position: relative;
+}
+.download-wrapper{
+    text-align: center;
+}
+.news-right p{
+    padding-bottom: 3px;
+}
+.news-right .read-more {
+    background-color:rgb(219, 212, 212);
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.lanuage {
+    display: block;
+    font-size: 20px;
+    color: #6b2158;
+
+}
+.language-option {
+    width:100%;
+    height: 20px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+.language-option option {
+    font-weight: bold;
+    font-size: 15px;
+    background:transparent;
+
+}
